@@ -1,0 +1,27 @@
+package designPatterns;
+
+class Singletonsample {
+	private static Singletonsample s_instance = null;
+
+	public String data;
+
+	private Singletonsample() {
+		data = "Example program for singleton class";
+	}
+
+	public static Singletonsample getInstance() {
+		if (s_instance == null)
+			s_instance = new Singletonsample();
+		return s_instance;
+	}
+}
+
+public class Singleton {
+	public static void main(String[] args) {
+		Singletonsample data1 = Singletonsample.getInstance();
+		Singletonsample data2 = Singletonsample.getInstance();
+		System.out.println("In Upper Case : ");
+		data1.data = data1.data.toUpperCase();
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.simplilearn.custom;
+
+public class NotValidNameException extends Exception{
+	
+	public String NotValidNameException(String message) {
+		return message;
+	}
+
+}

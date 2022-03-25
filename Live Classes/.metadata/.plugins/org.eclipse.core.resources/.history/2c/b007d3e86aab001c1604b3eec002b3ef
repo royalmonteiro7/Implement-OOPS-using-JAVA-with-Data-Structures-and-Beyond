@@ -1,0 +1,30 @@
+package JavaDeepDiveInterfacesandCollections;
+
+import java.util.Scanner;
+
+public class ValidationEmailId {
+	public boolean validation(String a[], String n) {
+		for (int i = 0; i < a.length; i++) {
+			if (a[i].equals(n)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+		ValidationEmailId e1 = new ValidationEmailId();
+		String a[] = { "dtresler0@technorati.com", "scharlton1@vimeo.com", "ccarmichael2@admin.ch",
+				"rmackaig3@blogs.com", "gtebbet4@unblog.fr", "yguyer5@va.gov", "tsidebottom6@gmpg.org",
+				"dpiffe7@nasa.gov", "donians8@pagesperso-orange.fr", "hgoomes9@walmart.com" };
+		System.out.println("enter email");
+		Scanner s = new Scanner(System.in);
+		String n = s.next();
+		boolean validation = e1.validation(a, n);
+		if (validation)
+			System.out.println("Email is valid");
+		else
+			System.out.println("email not valid");
+		s.close();
+	}
+}

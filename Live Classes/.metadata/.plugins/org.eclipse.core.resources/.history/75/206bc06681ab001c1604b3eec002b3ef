@@ -1,0 +1,29 @@
+package com.simplilearn.doubt;
+
+public class Employee implements Comparable<Employee> {
+
+	int empId;
+	String empName;
+
+	public Employee(int empId, String empName) {
+		this.empId = empId;
+		this.empName = empName;
+	}
+
+	
+	
+
+	@Override
+	public int compareTo(Employee obj) {
+
+		return empName.compareTo(obj.empName);
+//		if(empId==obj.empId)
+//			return 0;
+//		else if(empId>obj.empId) {
+//			return 1;
+//		}
+//		else
+//			return -1;
+	}
+
+}

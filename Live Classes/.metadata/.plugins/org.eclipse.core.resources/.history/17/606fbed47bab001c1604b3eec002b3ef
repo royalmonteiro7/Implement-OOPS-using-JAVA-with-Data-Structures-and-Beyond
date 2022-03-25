@@ -1,0 +1,16 @@
+package com.simplilearn.sync;
+
+class Counter {
+	int count;
+
+	void increment() {
+		count++;
+	}
+}
+
+public class SyncDemo {
+	public static void main(String[] args) {
+		Counter counter=new Counter();
+		System.out.println(counter.count);
+	}
+}

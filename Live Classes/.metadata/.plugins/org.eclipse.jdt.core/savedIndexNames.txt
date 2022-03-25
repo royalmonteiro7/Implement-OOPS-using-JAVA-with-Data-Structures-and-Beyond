@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\lenovo\Implement OOPS using JAVA with Data Structures and Beyond\Live Classes\.metadata\.plugins\org.eclipse.jdt.core
+16245386.index
+2012271132.index
+3918809023.index
+4044757637.index
+127542931.index
+2660464425.index
+2696698162.index

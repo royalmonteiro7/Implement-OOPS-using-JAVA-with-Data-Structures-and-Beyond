@@ -1,0 +1,21 @@
+package com.simplilearn.sync;
+
+class Counter {
+	int count;
+
+	void increment() {
+		count++;
+	}
+}
+
+public class SyncDemo {
+	public static void main(String[] args) {
+		Counter c = new Counter();
+		for(int i=0;i<=1000;i++) {
+			c.increment();
+		}
+		
+		
+		System.out.println(c.count);
+	}
+}

@@ -1,0 +1,8 @@
+package SortingAlgorithmsandFundamentalDataStructures;
+
+public class LinkedListNode<V> {
+	private V value;
+	private LinkedListNode<V> next;
+	
+	public 
+}

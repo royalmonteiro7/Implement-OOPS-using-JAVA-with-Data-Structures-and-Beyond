@@ -1,0 +1,21 @@
+package multithreadingConcepts;
+
+class ThreadClass implements Runnable {
+	Thread thread;
+	String threadName;
+
+	public ThreadClass(String name) {
+		this.threadName = name;
+		System.out.println("Creating thread " + this.threadName);
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+}
+
+public class ThreadDemo {
+
+}

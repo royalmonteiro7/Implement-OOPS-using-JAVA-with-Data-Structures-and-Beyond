@@ -1,0 +1,11 @@
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestStudentMark {
+	@Test
+	public void test_getTotalMarks() {
+		assertEquals(300.0, StudentMark.getTotalMarks(100, 100, 100));
+	}
+}

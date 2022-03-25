@@ -1,0 +1,10 @@
+package PublicAccessModifiers2;
+import package PublicAccessModifiers1.*;
+public class PublicAccessModifiers {
+	public static void main(String[] args) {
+
+		PublicAccessModifiers obj = new PublicAccessModifiers();
+		obj.display();
+
+	}
+}

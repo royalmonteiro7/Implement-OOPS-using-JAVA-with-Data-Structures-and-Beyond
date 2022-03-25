@@ -1,0 +1,8 @@
+package debuggingConcepts;
+
+import java.util.logging.Logger;
+
+public class LoggingExample {
+	
+	static Logger logger= Logger.getLogger(LoggingExample.class.getName());
+}
