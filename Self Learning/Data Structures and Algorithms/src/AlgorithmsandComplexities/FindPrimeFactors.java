@@ -17,9 +17,10 @@ public class FindPrimeFactors {
 		}
 		return result;
 	}
+
 	public static void main(String[] args) {
-		FindPrimeFactors findPrimeFactors=new FindPrimeFactors();
-		System.out.println(findPrimeFactors.primeFactors(2100078577L));
-		System.out.println(findPrimeFactors.primeFactors(2100078578L));
+		FindPrimeFactors findPrimeFactors = new FindPrimeFactors();
+		//System.out.println(findPrimeFactors.primeFactors(2100078577L));
+		System.out.println(findPrimeFactors.primeFactors(30));
 	}
 }

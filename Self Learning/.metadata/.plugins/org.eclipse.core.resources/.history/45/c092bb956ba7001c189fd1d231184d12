@@ -1,8 +1,0 @@
-package junittestreports;
-
-import org.junit.jupiter.api.BeforeAll;
-
-public class Junitannotationsample {
-	int x = 5, y = 10, z;
-	@BeforeAll
-}

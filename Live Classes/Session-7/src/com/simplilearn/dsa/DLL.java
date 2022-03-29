@@ -34,7 +34,8 @@ public class DLL {
 		if (new_node.next != null)
 			new_node.next.prev = new_node;
 	}
-       //insert the node at last
+
+	// insert the node at last
 	void append(int new_data) {
 		Node new_node = new Node(new_data);
 		Node last = head;
@@ -69,10 +70,10 @@ public class DLL {
 	public static void main(String[] args) {
 		DLL dll = new DLL();
 		dll.append(6);
-		dll.push(7);
-		dll.push(1);
+		//dll.push(7);
+		//dll.push(1);
 		dll.append(4);
-		dll.InsertAfter(dll.head.next, 8);
+		//dll.InsertAfter(dll.head.next, 8);
 		System.out.println("Created DLL is: ");
 		dll.printlist(dll.head);
 	}

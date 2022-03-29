@@ -1,0 +1,57 @@
+package SortingAlgorithmsandFundamentalDataStructures;
+
+//https://www.geeksforgeeks.org/quick-sort/
+public class QuickSort {
+
+	public static void sort(int[] numbers, int k) {
+		sort(numbers, 0, numbers.length - 1, k);
+	}
+
+	public static int sort(int[] numbers, int start, int end, int k) {
+		if (start < end) {
+			// 1st method
+			int p = partition(numbers, start, end);
+			if (p == k) {
+				return numbers[p];
+			}
+			if(p>k) { 
+				return sort(numbers, start, p - 1, k);
+			}
+			// 2nd method
+			
+			return sort(numbers, p + 1, end, k);
+		}
+		// 1, 4, 6, 2, 9, 7, 4, 3
+		return Integer.MAX_VALUE;
+	}
+
+	public static int partition(int[] numbers, int start, int end) {
+		int pivot = numbers[end];
+		int i = start - 1;
+		for (int j = start; j < end; j++) {
+			if (numbers[j] < pivot) {
+				i++;
+				swap(numbers, i, j);
+			}
+		}
+		swap(numbers, i + 1, end);
+		return i + 1;
+	}
+
+	public static void swap(int[] numbers, int i, int j) {
+		int temp = numbers[i];
+		numbers[i] = numbers[j];
+		numbers[j] = temp;
+
+	}
+
+	public static void main(String[] args) {
+		int[] numbers = { 1, 4, 6, 2, 9, 7, 4, 3 };
+		int k;
+		sort(numbers, 4);
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.print(numbers[i] + " ");
+		}
+	}
+
+}

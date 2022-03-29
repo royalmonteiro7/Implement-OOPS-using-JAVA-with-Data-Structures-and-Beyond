@@ -13,9 +13,7 @@ public class CircularLinkedList {
 
 	Node head;
 
-	CircularLinkedList() {
-		head = null;
-	}
+	
 
 	void sortedInsert(Node new_node) {
 		Node current = head;

@@ -1,5 +1,0 @@
-package javaCryptographicExtensions;
-
-public class TestChaCha20Poly1305 {
-
-}

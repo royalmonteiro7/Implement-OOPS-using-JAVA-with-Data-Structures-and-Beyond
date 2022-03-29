@@ -18,3 +18,4 @@ class RotateArray {
 		System.arraycopy(result, 0, nums, 0, nums.length);
 	}
 }
+//1, 2, 3, 4, 5, 6, 7
