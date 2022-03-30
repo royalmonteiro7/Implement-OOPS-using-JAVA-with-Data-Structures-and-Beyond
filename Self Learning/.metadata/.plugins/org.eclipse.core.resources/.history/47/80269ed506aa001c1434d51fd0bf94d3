@@ -1,7 +1,0 @@
-package SortingAlgorithmsandFundamentalDataStructures;
-
-public class Factorial {
-	public static void main(String[] args) {
-		factorial factorial=new factorial();
-	}
-}

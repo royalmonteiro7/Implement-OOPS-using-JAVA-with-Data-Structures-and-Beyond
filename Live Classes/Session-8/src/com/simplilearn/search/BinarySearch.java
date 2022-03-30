@@ -1,37 +1,36 @@
 package com.simplilearn.search;
+
 public class BinarySearch {
 
-    public static  void main(String[] args){
+	public static void main(String[] args) {
 
+		int[] arr = { 3, 6, 9, 12, 15 };
+		int key = 15;
+		int arrlength = arr.length;
+		binarySearch(arr, 0, key, arrlength);
+	}
 
-        int[] arr = {3,6,9,12,15};
-        int key = 12;
-        int arrlength = arr.length;
-        binarySearch(arr,0,key,arrlength);
-    }
+	public static void binarySearch(int[] arr, int lb, int key, int ub) {
 
-public static void binarySearch(int[] arr, int lb, int key, int ub){
+		while (lb <= ub) {
+			int midValue = (lb + ub) / 2;
+			if (arr[midValue] < key) {
 
-        int midValue = (lb+ub)/2;
-        while(lb<=ub){
+				lb = midValue + 1;
+			} else if (arr[midValue] == key) {
+				System.out.println("Element is found at index :" + midValue);
+				break;
+			} else {
 
-            if(arr[midValue]<key){
+				ub = midValue - 1;
+			}
 
-                lb = midValue + 1;
-            } else if(arr[midValue]==key){
-                System.out.println("Element is found at index :"+midValue);
-                break;
-            }else {
+		}
+		if (lb > ub) {
 
-                ub=midValue-1;
-            }
-            midValue = (lb+ub)/2;
-        }
-            if(lb>ub){
+			System.out.println("Element is not found");
+		}
 
-                System.out.println("Element is not found");
-            }
-
-}
+	}
 
 }

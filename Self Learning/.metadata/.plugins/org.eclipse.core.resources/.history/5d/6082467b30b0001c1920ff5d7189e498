@@ -1,9 +1,8 @@
 package SortingAlgorithmsandFundamentalDataStructures;
-
 //https://youtu.be/Ip8K0cQqYsM
 public class MergeSort {
 	public static void conquer(int[] arr, int start, int mid, int end) {
-		int merged[] = new int[end - start + 1];
+		int merged[] = new int[end]; 
 
 		int idx1 = start;
 		int idx2 = mid + 1;
@@ -39,7 +38,7 @@ public class MergeSort {
 	}
 
 	public static void main(String[] args) {
-		int arr[] = { 9, 6, 3 };
+		int arr[] = { 6, 3, 9, 5, 2, 8 };
 		divide(arr, 0, arr.length - 1);
 		// print
 		for (int i = 0; i < arr.length; i++) {
